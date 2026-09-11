@@ -1,8 +1,8 @@
-package com.example.group10;
+package quarter2;
 
 import org.junit.Test;
 
-public class Mendoza {
+public class Mendoza_MiniPeta1 {
     @Test
     public void printMyProfile() {
         String myName = "Aeus";
