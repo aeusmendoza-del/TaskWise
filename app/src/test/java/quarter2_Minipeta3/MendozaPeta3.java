@@ -1,10 +1,8 @@
-package quarter2_Minipeta3;
-
 import java.util.Scanner;
 
-class Main {
+public class Main {
 
-    public Main(String[] args) {
+    public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
 
@@ -69,4 +67,3 @@ class Main {
         scanner.close();
     }
 }
-
