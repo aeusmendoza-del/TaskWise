@@ -1,3 +1,5 @@
+package MiniPeta3;
+
 import java.util.Scanner;
 
 public class Mendoza_MainMenu {
