@@ -1,8 +1,8 @@
-package quarter2;
+package quarter2.minipeta2;
 
 import org.junit.Test;
 
-public class Bonacruz_MiniPeta1 {
+public class BonaCruz_MiniPeta1 {
     @Test
     public void printMyProfile() {
         String myName = "Bona";
