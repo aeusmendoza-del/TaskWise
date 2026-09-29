@@ -2,14 +2,15 @@ package quarter2.practicalexam;
 
 import java.util.Scanner;
 
-public class ArcadeMenu {
+public class Bonacruz_Arcade {
 
+    // Main system and menu loop
     public void start(Scanner scanner) {
         boolean running = true;
 
         while (running) {
             System.out.println("\n=== ARCADE MENU ===");
-            System.out.println("Choose an option: ");
+            System.out.println("Choose an option:");
             System.out.println("1. Buy Tokens");
             System.out.println("2. Claim Prize");
             System.out.println("3. Exit");
@@ -41,11 +42,13 @@ public class ArcadeMenu {
         }
     }
 
+    // Buy Tokens
     private void buyTokensOrder() {
         System.out.println("\nYou selected: Buy Tokens");
         System.out.println("Tokens purchased successfully!");
     }
 
+    // Claim Prize
     private void claimPrizeOrder(Scanner scanner) {
         int requiredTickets = 500;
 
