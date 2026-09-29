@@ -8,10 +8,15 @@ public class ArcadeMenu {
         boolean running = true;
 
         while (running) {
+
             System.out.println("\n=== ARCADE MENU ===");
+
             System.out.println("Choose an option: ");
+
             System.out.println("1. Buy Tokens");
+
             System.out.println("2. Claim Prize");
+
             System.out.println("3. Exit");
         }
     }
