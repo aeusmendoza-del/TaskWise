@@ -43,9 +43,27 @@ public class ArcadeMenu {
 
     private void buyTokensOrder() {
         System.out.println("\nYou selected: Buy Tokens");
+        System.out.println("Tokens purchased successfully!");
     }
 
     private void claimPrizeOrder(Scanner scanner) {
+        int requiredTickets = 500;
+
         System.out.println("\n--- Claim Prize ---");
+        System.out.println("Required tickets for Teddy Bear: " + requiredTickets);
+        System.out.print("Enter ticket count: ");
+
+        if (scanner.hasNextInt()) {
+            int tickets = scanner.nextInt();
+
+            if (tickets < requiredTickets) {
+                System.out.println("Keep Playing!");
+            } else {
+                System.out.println("Teddy Bear Won!");
+            }
+        } else {
+            System.out.println("Invalid ticket count.");
+            scanner.next();
+        }
     }
 }
