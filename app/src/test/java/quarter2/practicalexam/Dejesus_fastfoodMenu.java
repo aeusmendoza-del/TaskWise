@@ -36,10 +36,21 @@ public class Dejesus_fastfoodMenu {
 
                 total = price * quantity;
 
+                System.out.println("\n===== ORDER =====");
+
+                if (choice == 1) {
+                    System.out.println("Item: Burger");
+                } else if (choice == 2) {
+                    System.out.println("Item: Fried Chicken");
+                } else {
+                    System.out.println("Item: French Fries");
+                }
+
+                System.out.println("Quantity: " + quantity);
                 System.out.println("Total: P" + total);
 
             } else if (choice == 4) {
-                System.out.println("Thank you!");
+                System.out.println("Thank you for ordering!");
             } else {
                 System.out.println("Invalid choice.");
             }
