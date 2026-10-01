@@ -7,36 +7,41 @@ public class Dejesus_fastfoodMenu {
     public static void run(Scanner scan) {
 
         int choice;
+        int quantity;
+        double price;
+        double total;
 
         do {
             System.out.println("\n===== FAST FOOD MENU =====");
-            System.out.println("1. Burger");
-            System.out.println("2. Fried Chicken");
-            System.out.println("3. French Fries");
+            System.out.println("1. Burger - P99");
+            System.out.println("2. Fried Chicken - P120");
+            System.out.println("3. French Fries - P60");
             System.out.println("4. Exit");
             System.out.print("Choose: ");
 
             choice = scan.nextInt();
 
-            switch (choice) {
-                case 1:
-                    System.out.println("You chose Burger.");
-                    break;
+            if (choice >= 1 && choice <= 3) {
 
-                case 2:
-                    System.out.println("You chose Fried Chicken.");
-                    break;
+                System.out.print("Enter quantity: ");
+                quantity = scan.nextInt();
 
-                case 3:
-                    System.out.println("You chose French Fries.");
-                    break;
+                if (choice == 1) {
+                    price = 99;
+                } else if (choice == 2) {
+                    price = 120;
+                } else {
+                    price = 60;
+                }
 
-                case 4:
-                    System.out.println("Thank you!");
-                    break;
+                total = price * quantity;
 
-                default:
-                    System.out.println("Invalid choice.");
+                System.out.println("Total: P" + total);
+
+            } else if (choice == 4) {
+                System.out.println("Thank you!");
+            } else {
+                System.out.println("Invalid choice.");
             }
 
         } while (choice != 4);
