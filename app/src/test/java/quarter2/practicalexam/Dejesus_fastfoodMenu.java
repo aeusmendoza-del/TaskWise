@@ -18,6 +18,27 @@ public class Dejesus_fastfoodMenu {
 
             choice = scan.nextInt();
 
+            switch (choice) {
+                case 1:
+                    System.out.println("You chose Burger.");
+                    break;
+
+                case 2:
+                    System.out.println("You chose Fried Chicken.");
+                    break;
+
+                case 3:
+                    System.out.println("You chose French Fries.");
+                    break;
+
+                case 4:
+                    System.out.println("Thank you!");
+                    break;
+
+                default:
+                    System.out.println("Invalid choice.");
+            }
+
         } while (choice != 4);
     }
 }
