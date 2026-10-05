@@ -1,5 +1,8 @@
 package quarter2.practicalexam;
 
+import org.junit.Test;
+
+import java.io.ByteArrayInputStream;
 import java.util.Scanner;
 
 public class Hernandez_CinemaMenu {
@@ -13,7 +16,7 @@ public class Hernandez_CinemaMenu {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        CinemaMenu cinemaSystem = new CinemaMenu();
+        Hernandez_CinemaMenu cinemaSystem = new Hernandez_CinemaMenu();
         cinemaSystem.start(scanner);
         scanner.close();
     }
@@ -109,4 +112,5 @@ public class Hernandez_CinemaMenu {
         System.out.println("Snacks sold  : " + snacksSold);
         System.out.println("Total sales  : PHP " + String.format("%.2f", total));
     }
+    
 }
