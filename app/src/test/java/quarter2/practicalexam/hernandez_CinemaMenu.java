@@ -1,10 +1,11 @@
 package quarter2.practicalexam;
 
+
 import java.util.Scanner;
 
-public class Hernandez_CinemaMenu {
+public class hernandez_CinemaMenu {
 
-    private static final int MINIMUM_AGE = 18;
+    private static final     int MINIMUM_AGE = 18;
     private static final double TICKET_PRICE = 330.00;
     private static final double SNACK_COMBO_PRICE = 270.00;
 
@@ -13,7 +14,7 @@ public class Hernandez_CinemaMenu {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        CinemaMenu cinemaSystem = new CinemaMenu();
+        CinemaTicketingTest cinemaSystem = new CinemaTicketingTest();
         cinemaSystem.start(scanner);
         scanner.close();
     }
