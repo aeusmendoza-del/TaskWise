@@ -25,7 +25,7 @@
         android:id="@+id/imageView5"
         android:layout_width="78dp"
         android:layout_height="57dp"
-        app:srcCompat="@drawable/screenshot_2026_10_12_215227"
+        app:srcCompat="@drawable/Cofont"
         tools:layout_editor_absoluteX="5dp"
         tools:layout_editor_absoluteY="94dp" />
 
@@ -33,7 +33,7 @@
         android:id="@+id/imageView3"
         android:layout_width="176dp"
         android:layout_height="56dp"
-        app:srcCompat="@drawable/screenshot_2026_10_12_214757"
+        app:srcCompat="@drawable/Wcb"
         tools:layout_editor_absoluteX="5dp"
         tools:layout_editor_absoluteY="54dp" />
 
