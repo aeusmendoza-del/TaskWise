@@ -11,17 +11,17 @@
         android:id="@+id/imageView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/download"
+        android:src= "drawable/download"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="0dp" />
 
     <ImageView
         android:id="@+id/imageView9"
-        android:layout_width="322dp"
-        android:layout_height="328dp"
+        android:layout_width="357dp"
+        android:layout_height="257dp"
         android:src="@drawable/blue_and_white_illustrated_login_page_mobile_prototype__1_"
-        tools:layout_editor_absoluteX="-123dp"
-        tools:layout_editor_absoluteY="607dp" />
+        tools:layout_editor_absoluteX="-142dp"
+        tools:layout_editor_absoluteY="639dp" />
 
     <ImageView
         android:id="@+id/imageView10"
@@ -39,4 +39,67 @@
         tools:layout_editor_absoluteX="59dp"
         tools:layout_editor_absoluteY="-194dp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        android:id="@+id/editTextText8"
+        android:layout_width="179dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:text="TASKWISE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="297dp" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="34dp"
+        android:layout_height="168dp"
+        android:src="@drawable/blue_and_white_illustrated_login_page_mobile_prototype__2_"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="409dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="116dp"
+        android:layout_height="48dp"
+        android:text="USERNAME"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="409dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="107dp"
+        android:layout_height="37dp"
+        android:text="EMAIL"
+        tools:layout_editor_absoluteX="151dp"
+        tools:layout_editor_absoluteY="476dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="130dp"
+        android:layout_height="36dp"
+        android:text="PASSWORD"
+        tools:layout_editor_absoluteX="140dp"
+        tools:layout_editor_absoluteY="528dp" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="189dp"
+        android:layout_height="37dp"
+        android:text="log in"
+        tools:layout_editor_absoluteX="118dp"
+        tools:layout_editor_absoluteY="585dp" />
+
+    <
+
+    <EditText
+        android:id="@+id/editTextText12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="ICT SOLUTION"
+        tools:layout_editor_absoluteX="118dp"
+        tools:layout_editor_absoluteY="347dp" />
+
+
