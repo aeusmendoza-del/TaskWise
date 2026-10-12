@@ -29,7 +29,7 @@
         android:layout_height="204dp"
         android:src="@drawable/blue_and_white_illustrated_login_page_mobile_prototype"
         tools:layout_editor_absoluteX="103dp"
-        tools:layout_editor_absoluteY="89dp" />
+        tools:layout_editor_absoluteY="93dp" />
 
     <ImageView
         android:id="@+id/imageView11"
