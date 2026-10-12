@@ -45,4 +45,4 @@
         android:layout_height="wrap_content"
         android:text="TextView"
         tools:layout_editor_absoluteX="51dp"
-        tools:layout_editor_absoluteY="329dp" />
+        tools:layout_editor_absoluteY="369dp"
