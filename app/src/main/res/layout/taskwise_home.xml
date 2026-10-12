@@ -21,13 +21,5 @@
         tools:layout_editor_absoluteX="311dp"
         tools:layout_editor_absoluteY="-63dp" />
 
-    <ImageView
-        android:id="@+id/imageView12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@android:drawable/ic_menu_help"
-        tools:layout_editor_absoluteX="60dp"
-        tools:layout_editor_absoluteY="8dp" />
-
 </an
     droidx.constraintlayout.widget.ConstraintLayout>
