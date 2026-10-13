@@ -6,6 +6,14 @@
     android:layout_height="match_parent">
 
     <ImageView
+        android:id="@+id/imageView26"
+        android:layout_width="436dp"
+        android:layout_height="383dp"
+        app:srcCompat="@drawable/web_button_color_icon_png"
+        tools:layout_editor_absoluteX="-26dp"
+        tools:layout_editor_absoluteY="506dp" />
+
+    <ImageView
         android:id="@+id/imageView"
         android:layout_width="20dp"
         android:layout_height="24dp"
@@ -31,11 +39,11 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="176dp"
-        android:layout_height="56dp"
+        android:layout_width="175dp"
+        android:layout_height="47dp"
         app:srcCompat="@drawable/Wcb"
-        tools:layout_editor_absoluteX="5dp"
-        tools:layout_editor_absoluteY="54dp" />
+        tools:layout_editor_absoluteX="-7dp"
+        tools:layout_editor_absoluteY="57dp" />
 
     <TextView
         android:id="@+id/textView2"
@@ -69,15 +77,21 @@
         tools:layout_editor_absoluteX="25dp"
         tools:layout_editor_absoluteY="190dp" />
 
-    <EditText
-        android:id="@+id/editTextText"
-        android:layout_width="100dp"
-        android:layout_height="58dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Checklist"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="339dp" />
+    <ImageView
+        android:id="@+id/imageView29"
+        android:layout_width="45dp"
+        android:layout_height="33dp"
+        app:srcCompat="@drawable/home"
+        tools:layout_editor_absoluteX="199dp"
+        tools:layout_editor_absoluteY="656dp" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="79dp"
+        android:layout_height="39dp"
+        android:text="Home"
+        tools:layout_editor_absoluteX="181dp"
+        tools:layout_editor_absoluteY="689dp" />
 
     <ImageView
         android:id="@+id/imageView22"
@@ -87,16 +101,6 @@
         tools:layout_editor_absoluteX="235dp"
         tools:layout_editor_absoluteY="190dp" />
 
-    <EditText
-        android:id="@+id/editTextText2"
-        android:layout_width="99dp"
-        android:layout_height="54dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Deadline"
-        tools:layout_editor_absoluteX="254dp"
-        tools:layout_editor_absoluteY="348dp" />
-
     <ImageView
         android:id="@+id/imageView23"
         android:layout_width="159dp"
@@ -104,16 +108,6 @@
         app:srcCompat="@drawable/notebook"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="397dp" />
-
-    <EditText
-        android:id="@+id/editTextText3"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Notebook"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="553dp" />
 
     <ImageView
         android:id="@+id/imageView24"
@@ -123,63 +117,101 @@
         tools:layout_editor_absoluteX="238dp"
         tools:layout_editor_absoluteY="414dp" />
 
-    <EditText
-        android:id="@+id/editTextText4"
-        android:layout_width="96dp"
-        android:layout_height="47dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Calendar"
-        tools:layout_editor_absoluteX="254dp"
-        tools:layout_editor_absoluteY="556dp" />
-
-    <ImageView
-        android:id="@+id/imageView26"
+    <Button
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/web_button_color_icon_png"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="542dp" />
+        android:text="Check List"
+        tools:layout_editor_absoluteX="17dp"
+        tools:layout_editor_absoluteY="325dp" />
 
-    <ImageView
-        android:id="@+id/imageView29"
-        android:layout_width="63dp"
-        android:layout_height="55dp"
-        app:srcCompat="@drawable/home"
-        tools:layout_editor_absoluteX="172dp"
-        tools:layout_editor_absoluteY="674dp" />
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deadline"
+        tools:layout_editor_absoluteX="244dp"
+        tools:layout_editor_absoluteY="325dp" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notebook"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="553dp" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calendar"
+        app:layout_constraintTop_toBottomOf="@+id/imageView24"
+        tools:layout_editor_absoluteX="244dp" />
 
     <ImageView
         android:id="@+id/imageView30"
-        android:layout_width="66dp"
-        android:layout_height="54dp"
-        app:srcCompat="@drawable/profile"
-        tools:layout_editor_absoluteX="17dp"
-        tools:layout_editor_absoluteY="674dp" />
+        android:layout_width="38dp"
+        android:layout_height="45dp"
+        app:srcCompat="@drawable/memus"
+        tools:layout_editor_absoluteX="350dp"
+        tools:layout_editor_absoluteY="656dp" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="80dp"
+        android:layout_height="38dp"
+        android:text="Menu"
+        tools:layout_editor_absoluteX="330dp"
+        tools:layout_editor_absoluteY="690dp" />
 
     <ImageView
         android:id="@+id/imageView32"
-        android:layout_width="58dp"
-        android:layout_height="55dp"
-        app:srcCompat="@drawable/subject"
-        tools:layout_editor_absoluteX="98dp"
-        tools:layout_editor_absoluteY="674dp" />
+        android:layout_width="43dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/task"
+        tools:layout_editor_absoluteX="276dp"
+        tools:layout_editor_absoluteY="656dp" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="78dp"
+        android:layout_height="38dp"
+        android:text="Task"
+        tools:layout_editor_absoluteX="260dp"
+        tools:layout_editor_absoluteY="690dp" />
 
     <ImageView
         android:id="@+id/imageView33"
-        android:layout_width="53dp"
-        android:layout_height="56dp"
-        app:srcCompat="@drawable/task"
-        tools:layout_editor_absoluteX="255dp"
-        tools:layout_editor_absoluteY="672dp" />
+        android:layout_width="50dp"
+        android:layout_height="31dp"
+        app:srcCompat="@drawable/profile"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="659dp" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="97dp"
+        android:layout_height="37dp"
+        android:text="Profile"
+        tools:layout_editor_absoluteX="-4dp"
+        tools:layout_editor_absoluteY="690dp" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="112dp"
+        android:layout_height="39dp"
+        android:text="Subjects"
+        tools:layout_editor_absoluteX="83dp"
+        tools:layout_editor_absoluteY="689dp" />
 
     <ImageView
         android:id="@+id/imageView34"
-        android:layout_width="64dp"
-        android:layout_height="55dp"
-        app:srcCompat="@drawable/memus"
-        tools:layout_editor_absoluteX="317dp"
-        tools:layout_editor_absoluteY="674dp" />
+        android:layout_width="47dp"
+        android:layout_height="36dp"
+        app:srcCompat="@drawable/subject"
+        tools:layout_editor_absoluteX="113dp"
+        tools:layout_editor_absoluteY="653dp" />
 
 </an
     droidx.constraintlayout.widget.ConstraintLayout>
