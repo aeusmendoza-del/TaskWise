@@ -10,8 +10,8 @@
         android:layout_width="436dp"
         android:layout_height="383dp"
         app:srcCompat="@drawable/web_button_color_icon_png"
-        tools:layout_editor_absoluteX="-26dp"
-        tools:layout_editor_absoluteY="506dp" />
+        tools:layout_editor_absoluteX="-13dp"
+        tools:layout_editor_absoluteY="503dp" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -30,52 +30,12 @@
         tools:layout_editor_absoluteY="-63dp" />
 
     <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="78dp"
-        android:layout_height="57dp"
-        app:srcCompat="@drawable/Cofont"
-        tools:layout_editor_absoluteX="5dp"
-        tools:layout_editor_absoluteY="94dp" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="175dp"
-        android:layout_height="47dp"
-        app:srcCompat="@drawable/Wcb"
-        tools:layout_editor_absoluteX="-7dp"
-        tools:layout_editor_absoluteY="57dp" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="What would you like today?"
-        tools:layout_editor_absoluteX="5dp"
-        tools:layout_editor_absoluteY="144dp" />
-
-    <ImageView
-        android:id="@+id/imageView13"
-        android:layout_width="174dp"
-        android:layout_height="101dp"
-        app:srcCompat="@drawable/blue_and_white_illustrated_login_page_mobile_prototype__1_"
-        tools:layout_editor_absoluteX="218dp"
-        tools:layout_editor_absoluteY="70dp" />
-
-    <ImageView
-        android:id="@+id/imageView15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/blue_and_white_illustrated_login_page_mobile_prototype"
-        tools:layout_editor_absoluteX="276dp"
-        tools:layout_editor_absoluteY="70dp" />
-
-    <ImageView
         android:id="@+id/imageView18"
         android:layout_width="119dp"
         android:layout_height="149dp"
         app:srcCompat="@drawable/checklist_2"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="190dp" />
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="152dp" />
 
     <ImageView
         android:id="@+id/imageView29"
@@ -98,8 +58,8 @@
         android:layout_width="138dp"
         android:layout_height="158dp"
         app:srcCompat="@drawable/clock"
-        tools:layout_editor_absoluteX="235dp"
-        tools:layout_editor_absoluteY="190dp" />
+        tools:layout_editor_absoluteX="244dp"
+        tools:layout_editor_absoluteY="152dp" />
 
     <ImageView
         android:id="@+id/imageView23"
@@ -107,39 +67,39 @@
         android:layout_height="156dp"
         app:srcCompat="@drawable/notebook"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="397dp" />
+        tools:layout_editor_absoluteY="388dp" />
 
     <ImageView
         android:id="@+id/imageView24"
         android:layout_width="121dp"
         android:layout_height="137dp"
         app:srcCompat="@drawable/deadline"
-        tools:layout_editor_absoluteX="238dp"
-        tools:layout_editor_absoluteY="414dp" />
+        tools:layout_editor_absoluteX="245dp"
+        tools:layout_editor_absoluteY="397dp" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Check List"
-        tools:layout_editor_absoluteX="17dp"
-        tools:layout_editor_absoluteY="325dp" />
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="291dp" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Deadline"
-        tools:layout_editor_absoluteX="244dp"
-        tools:layout_editor_absoluteY="325dp" />
+        tools:layout_editor_absoluteX="260dp"
+        tools:layout_editor_absoluteY="291dp" />
 
     <Button
         android:id="@+id/button6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Notebook"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="553dp" />
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="527dp" />
 
     <Button
         android:id="@+id/button8"
@@ -154,8 +114,8 @@
         android:layout_width="38dp"
         android:layout_height="45dp"
         app:srcCompat="@drawable/memus"
-        tools:layout_editor_absoluteX="350dp"
-        tools:layout_editor_absoluteY="656dp" />
+        tools:layout_editor_absoluteX="356dp"
+        tools:layout_editor_absoluteY="651dp" />
 
     <Button
         android:id="@+id/button10"
@@ -171,7 +131,7 @@
         android:layout_height="40dp"
         app:srcCompat="@drawable/task"
         tools:layout_editor_absoluteX="276dp"
-        tools:layout_editor_absoluteY="656dp" />
+        tools:layout_editor_absoluteY="650dp" />
 
     <Button
         android:id="@+id/button11"
@@ -186,8 +146,8 @@
         android:layout_width="50dp"
         android:layout_height="31dp"
         app:srcCompat="@drawable/profile"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="659dp" />
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="656dp" />
 
     <Button
         android:id="@+id/button12"
@@ -211,7 +171,25 @@
         android:layout_height="36dp"
         app:srcCompat="@drawable/subject"
         tools:layout_editor_absoluteX="113dp"
-        tools:layout_editor_absoluteY="653dp" />
+        tools:layout_editor_absoluteY="650dp" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="241dp"
+        android:layout_height="68dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="𝐰𝐡𝐚𝐭 𝐝𝐨 𝐲𝐨𝐮 𝐰𝐚𝐧𝐭 𝐭𝐨 𝐝𝐨 𝐭𝐨𝐝𝐚𝐲?"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="65dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="269dp"
+        android:layout_height="41dp"
+        app:srcCompat="@drawable/Wcb"
+        tools:layout_editor_absoluteX="69dp"
+        tools:layout_editor_absoluteY="16dp" />
 
 </an
     droidx.constraintlayout.widget.ConstraintLayout>
