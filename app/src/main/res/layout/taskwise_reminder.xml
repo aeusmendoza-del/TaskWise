@@ -6,21 +6,352 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imageView22"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/blue_and_white_illustrated_login_page_mobile_prototype__2_"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="25dp" />
+        app:srcCompat="@drawable/pogi"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-3dp" />
+
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="436dp"
+        android:layout_height="383dp"
+        app:srcCompat="@drawable/web_button_color_icon_png"
+        tools:layout_editor_absoluteX="-13dp"
+        tools:layout_editor_absoluteY="503dp" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="79dp"
+        android:layout_height="39dp"
+        android:text="Home"
+        tools:layout_editor_absoluteX="166dp"
+        tools:layout_editor_absoluteY="689dp" />
+
+    <ImageView
+        android:id="@+id/imageView27"
+        android:layout_width="38dp"
+        android:layout_height="45dp"
+        app:srcCompat="@drawable/memus"
+        tools:layout_editor_absoluteX="356dp"
+        tools:layout_editor_absoluteY="651dp" />
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="80dp"
+        android:layout_height="38dp"
+        android:text="Menu"
+        tools:layout_editor_absoluteX="330dp"
+        tools:layout_editor_absoluteY="690dp" />
+
+    <ImageView
+        android:id="@+id/imageView29"
+        android:layout_width="43dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/task"
+        tools:layout_editor_absoluteX="276dp"
+        tools:layout_editor_absoluteY="650dp" />
+
+    <Button
+        android:id="@+id/button16"
+        android:layout_width="78dp"
+        android:layout_height="38dp"
+        android:text="Task"
+        tools:layout_editor_absoluteX="260dp"
+        tools:layout_editor_absoluteY="690dp" />
+
+    <ImageView
+        android:id="@+id/imageView31"
+        android:layout_width="60dp"
+        android:layout_height="68dp"
+        app:srcCompat="@drawable/_658934_200__1_"
+        tools:layout_editor_absoluteX="181dp"
+        tools:layout_editor_absoluteY="638dp" />
+
+    <ImageView
+        android:id="@+id/imageView35"
+        android:layout_width="50dp"
+        android:layout_height="31dp"
+        app:srcCompat="@drawable/profile"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="656dp" />
+
+    <Button
+        android:id="@+id/button17"
+        android:layout_width="97dp"
+        android:layout_height="37dp"
+        android:text="Profile"
+        tools:layout_editor_absoluteX="-4dp"
+        tools:layout_editor_absoluteY="690dp" />
+
+    <Button
+        android:id="@+id/button18"
+        android:layout_width="112dp"
+        android:layout_height="39dp"
+        android:text="Subjects"
+        tools:layout_editor_absoluteX="69dp"
+        tools:layout_editor_absoluteY="689dp" />
+
+    <ImageView
+        android:id="@+id/imageView36"
+        android:layout_width="47dp"
+        android:layout_height="36dp"
+        app:srcCompat="@drawable/subject"
+        tools:layout_editor_absoluteX="113dp"
+        tools:layout_editor_absoluteY="650dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/images__2_"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-39dp" />
 
     <EditText
-        android:id="@+id/editTextText6"
-        android:layout_width="140dp"
-        android:layout_height="60dp"
+        android:id="@+id/editTextText"
+        android:layout_width="168dp"
+        android:layout_height="74dp"
         android:ems="10"
         android:inputType="text"
-        android:text="REMINDER"
-        tools:layout_editor_absoluteX="57dp"
-        tools:layout_editor_absoluteY="10dp" />
+        android:text="𝐑𝐞𝐦𝐢𝐧𝐝𝐞𝐫"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="168dp"
+        android:layout_height="74dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="𝐉𝐮𝐥𝐲 2026"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="114dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="𝐒𝐭𝐚𝐲 𝐎𝐫𝐠𝐚𝐧𝐢𝐳𝐞, 𝐍𝐞𝐯𝐞𝐫 𝐌𝐢𝐬𝐬"
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="188dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="𝐖𝐡𝐚𝐭 𝐌𝐚𝐭𝐭𝐞𝐫𝐬"
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="209dp" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="158dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/pngtree_3d_blue_notification_bell_icon_on_isolated_png_image_16099169__1_"
+        tools:layout_editor_absoluteX="216dp"
+        tools:layout_editor_absoluteY="113dp" />
+
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="71dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="𝐄𝐯𝐞𝐧𝐭"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="222dp" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="71dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="𝐃𝐚𝐭𝐞"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="194dp"
+        tools:layout_editor_absoluteY="222dp" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="435dp"
+        android:layout_height="146dp"
+        app:srcCompat="@drawable/screenshot_2026_10_17_200530"
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="268dp" />
+
+    <ImageView
+        android:id="@+id/imageView38"
+        android:layout_width="443dp"
+        android:layout_height="419dp"
+        app:srcCompat="@drawable/_45311e525272119c1cd083fb48eca868"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="287dp" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="113dp"
+        android:layout_height="51dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="6:00 𝐏𝐌"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="495dp" />
+
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="113dp"
+        android:layout_height="51dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="6:00 𝐏𝐌"
+        android:textColor="#03A9F4"
+        android:textSize="25sp"
+        tools:layout_editor_absoluteX="206dp"
+        tools:layout_editor_absoluteY="340dp" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="113dp"
+        android:layout_height="51dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="𝐂𝐨𝐨𝐤𝐢𝐧𝐠"
+        android:textSize="25sp"
+        tools:layout_editor_absoluteX="206dp"
+        tools:layout_editor_absoluteY="289dp" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="62dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/_9790364__1_"
+        tools:layout_editor_absoluteX="336dp"
+        tools:layout_editor_absoluteY="285dp" />
+
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        app:srcCompat="@drawable/_9790364__1_"
+        tools:layout_editor_absoluteX="336dp"
+        tools:layout_editor_absoluteY="473dp" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="69dp"
+        android:layout_height="63dp"
+        app:srcCompat="@drawable/images__3_"
+        tools:layout_editor_absoluteX="329dp"
+        tools:layout_editor_absoluteY="334dp" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="191dp"
+        android:layout_height="142dp"
+        app:srcCompat="@drawable/screenshot_2026_10_17_202154"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="269dp" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="53dp"
+        android:layout_height="55dp"
+        app:srcCompat="@drawable/black_calendar_page"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="284dp" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="47dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="06"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        tools:layout_editor_absoluteX="91dp"
+        tools:layout_editor_absoluteY="287dp" />
+
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="47dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="07"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        tools:layout_editor_absoluteX="289dp"
+        tools:layout_editor_absoluteY="447dp" />
+
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="53dp"
+        android:layout_height="52dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="𝐅𝐫𝐢"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="283dp"
+        tools:layout_editor_absoluteY="494dp" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="113dp"
+        android:layout_height="51dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="𝐓𝐡𝐮𝐫𝐬𝐝𝐚𝐲"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="69dp"
+        tools:layout_editor_absoluteY="320dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6 𝐉𝐮𝐥𝐲 2026"
+        android:textSize="15sp"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="371dp" />
+
+    <androidx.constraintlayout.widget.Barrier android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="83dp"
+        android:layout_height="65dp"
+        app:srcCompat="@drawable/images__4___1_"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="464dp" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="158dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="𝐒𝐭𝐮𝐝𝐲 𝐒𝐞𝐬𝐬𝐢𝐨𝐧"
+        android:textSize="25sp"
+        tools:layout_editor_absoluteX="126dp"
+        tools:layout_editor_absoluteY="447dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
