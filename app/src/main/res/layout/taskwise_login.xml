@@ -6,16 +6,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
     tools:ignore="ExtraText">
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="𝙨𝙤𝙡𝙪𝙩𝙞𝙤𝙣"
-        tools:layout_editor_absoluteX="191dp"
-        tools:layout_editor_absoluteY="347dp" />
 
     <ImageView
         android:id="@+id/imageView6"
@@ -23,7 +14,8 @@
         android:layout_height="wrap_content"
         android:src= "drawable/download"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="0dp" />
+        tools:layout_editor_absoluteX="0dp"
+        tools:ignore="ContentDescription,MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView9"
@@ -31,84 +23,87 @@
         android:layout_height="257dp"
         android:src="@drawable/blue_and_white_illustrated_login_page_mobile_prototype__1_"
         tools:layout_editor_absoluteX="-142dp"
-        tools:layout_editor_absoluteY="639dp" />
-
-    <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="204dp"
-        android:layout_height="204dp"
-        android:src="@drawable/blue_and_white_illustrated_login_page_mobile_prototype"
-        tools:layout_editor_absoluteX="103dp"
-        tools:layout_editor_absoluteY="93dp" />
+        tools:layout_editor_absoluteY="639dp"
+        tools:ignore="ContentDescription,MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView11"
-        android:layout_width="516dp"
-        android:layout_height="287dp"
+        android:layout_width="499dp"
+        android:layout_height="275dp"
         android:src="@drawable/blue_and_white_illustrated_login_page_mobile_prototype__1_"
-        tools:layout_editor_absoluteX="59dp"
+        tools:ignore="ContentDescription,MissingConstraints"
+        tools:layout_editor_absoluteX="76dp"
         tools:layout_editor_absoluteY="-194dp" />
-
-    <ImageView
-        android:id="@+id/imageView14"
-        android:layout_width="34dp"
-        android:layout_height="168dp"
-        android:src="@drawable/blue_and_white_illustrated_login_page_mobile_prototype__2_"
-        tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="409dp" />
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="116dp"
-        android:layout_height="48dp"
+        android:layout_width="201dp"
+        android:layout_height="47dp"
+        android:backgroundTint="#4169E1db"
         android:text="USERNAME"
-        tools:layout_editor_absoluteX="147dp"
-        tools:layout_editor_absoluteY="409dp" />
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteX="109dp"
+        tools:layout_editor_absoluteY="404dp" />
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="107dp"
-        android:layout_height="37dp"
+        android:layout_width="202dp"
+        android:layout_height="46dp"
+        android:backgroundTint="#4169E1db"
         android:text="EMAIL"
-        tools:layout_editor_absoluteX="151dp"
-        tools:layout_editor_absoluteY="476dp" />
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteX="109dp"
+        tools:layout_editor_absoluteY="464dp" />
 
     <Button
         android:id="@+id/button5"
-        android:layout_width="130dp"
-        android:layout_height="36dp"
+        android:layout_width="202dp"
+        android:layout_height="44dp"
+        android:backgroundTint="#4169E1db"
         android:text="PASSWORD"
-        tools:layout_editor_absoluteX="140dp"
-        tools:layout_editor_absoluteY="528dp" />
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteX="109dp"
+        tools:layout_editor_absoluteY="527dp" />
+
 
     <Button
         android:id="@+id/button7"
-        android:layout_width="189dp"
-        android:layout_height="37dp"
+        android:layout_width="186dp"
+        android:layout_height="51dp"
         android:text="log in"
-        tools:layout_editor_absoluteX="118dp"
-        tools:layout_editor_absoluteY="585dp" />
+        android:backgroundTint="#191970db"
+    tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteX="112dp"
+        tools:layout_editor_absoluteY="588dp" />
 
-    <
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="𝚃𝚊𝚜𝚔𝚆𝚒𝚜𝚎"
-        android:textColor="#0000FF"
-        android:textSize="30sp"
-        tools:layout_editor_absoluteX="132dp"
-        tools:layout_editor_absoluteY="297dp" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="227dp"
+        android:layout_height="225dp"
+        android:layout_marginBottom="440dp"
+        android:src="@drawable/blue_and_white_illustrated_login_page_mobile_prototype__5_"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="ContentDescription,MissingConstraints"
+        tools:layout_editor_absoluteX="89dp" />
 
-    <
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="212dp"
+        android:layout_height="63dp"
+        android:src="@drawable/img"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="299dp"
+        tools:ignore="ContentDescription,MissingConstraints" />
 
-    <TextView
-        android:layout_width="34dp"
-        android:layout_height="0dp"
-        android:text="𝙄𝘾𝙏"
-        android:textColor="#00008B"
-        android:textSize="20sp"
-        tools:layout_editor_absoluteX="147dp"
-        tools:layout_editor_absoluteY="338dp" />
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="40dp"
+        android:layout_height="166dp"
+        android:src="@drawable/blue_and_white_illustrated_login_page_mobile_prototype__6_"
+        tools:ignore="ContentDescription,MissingConstraints,MissingPrefix"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="404dp"
+
 
 
