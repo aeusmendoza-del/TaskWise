@@ -5,21 +5,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
     <ImageView
         android:id="@+id/imageView21"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:contentDescription="Pogi image"
         app:srcCompat="@drawable/pogi"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-3dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView26"
-        android:layout_width="436dp"
+        android:layout_width="0dp"
         android:layout_height="383dp"
         app:srcCompat="@drawable/web_button_color_icon_png"
-        tools:layout_editor_absoluteX="-13dp"
-        tools:layout_editor_absoluteY="503dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="503dp" />
 
 
     <Button
@@ -27,8 +31,33 @@
         android:layout_width="79dp"
         android:layout_height="39dp"
         android:text="Home"
-        tools:layout_editor_absoluteX="166dp"
-        tools:layout_editor_absoluteY="689dp" />
+        android:layout_marginBottom="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="214dp"
+        android:layout_height="182dp"
+        android:layout_marginTop="128dp"
+        android:translationX="-4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/images__1_" />
+
+    <Button
+        android:id="@+id/buttonCheckList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check List"
+        android:backgroundTint="#03A9F4"
+        android:textColor="#FFFFFF"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="291dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button"
@@ -37,23 +66,36 @@
         android:text="Check List"
         android:backgroundTint="#03A9F4"
         android:textColor="#FFFFFF"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="291dp" />
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="291dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="194dp"
+        android:layout_height="176dp"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="132dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pngtree_purple_clock_timetable_illustration_image_1405819" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="256dp"
+        android:layout_marginTop="296dp"
+        android:backgroundTint="#CF9FFF"
         android:text="Deadline"
-        android:backgroundTint="#9C27B0"
         android:textColor="#FFFFFF"
-        tools:layout_editor_absoluteX="260dp"
-        tools:layout_editor_absoluteY="291dp" />
-
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/editTextUser"
         android:layout_width="71dp"
         android:layout_height="56dp"
         android:ems="10"
@@ -61,16 +103,19 @@
         android:text="User"
         android:textColor="#2196F3"
         android:textSize="30sp"
-        tools:layout_editor_absoluteX="185dp"
-        tools:layout_editor_absoluteY="78dp" />
-
+        android:layout_marginStart="185dp"
+        android:layout_marginTop="78dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
     <ImageView
-        android:id="@+id/imageView25"
+        android:id="@+id/imageViewDiary"
         android:layout_width="212dp"
         android:layout_height="193dp"
+        android:layout_marginTop="364dp"
+        android:translationX="-3dp"
         app:srcCompat="@drawable/vecteezy_diary_book_sticker_18873852"
-        tools:layout_editor_absoluteX="-3dp"
-        tools:layout_editor_absoluteY="364dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button6"
@@ -79,9 +124,10 @@
         android:text="Notebook"
         android:backgroundTint="#FF69B4"
         android:textColor="#FFFFFF"
-        tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="527dp" />
-
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="527dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView28"
@@ -90,10 +136,11 @@
         android:background="@android:color/transparent"
         android:contentDescription="Calendar icon"
         android:scaleType="fitCenter"
+        android:layout_marginStart="208dp"
+        android:layout_marginTop="362dp"
         app:srcCompat="@drawable/pngtreecalendar_icon_with_a_highlighted_22163752"
-        tools:layout_editor_absoluteX="208dp"
-        tools:layout_editor_absoluteY="362dp" />
-
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button8"
@@ -102,81 +149,100 @@
         android:text="Calendar"
         android:backgroundTint="#000000"
         android:textColor="#FFFFFF"
-        tools:layout_editor_absoluteX="244dp"
-        tools:layout_editor_absoluteY="534dp" />
+        android:layout_marginStart="244dp"
+        android:layout_marginTop="534dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView30"
         android:layout_width="38dp"
         android:layout_height="45dp"
+        android:layout_marginStart="356dp"
+        android:layout_marginTop="651dp"
         app:srcCompat="@drawable/memus"
-        tools:layout_editor_absoluteX="356dp"
-        tools:layout_editor_absoluteY="651dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button10"
         android:layout_width="80dp"
         android:layout_height="38dp"
         android:text="Menu"
-        tools:layout_editor_absoluteX="330dp"
-        tools:layout_editor_absoluteY="690dp" />
+        android:layout_marginStart="330dp"
+        android:layout_marginTop="690dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView32"
         android:layout_width="43dp"
         android:layout_height="40dp"
+        android:layout_marginStart="276dp"
+        android:layout_marginTop="650dp"
         app:srcCompat="@drawable/task"
-        tools:layout_editor_absoluteX="276dp"
-        tools:layout_editor_absoluteY="650dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button11"
         android:layout_width="78dp"
         android:layout_height="38dp"
         android:text="Task"
-        tools:layout_editor_absoluteX="260dp"
-        tools:layout_editor_absoluteY="690dp" />
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="690dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="60dp"
         android:layout_height="68dp"
+        android:layout_marginStart="181dp"
+        android:layout_marginTop="638dp"
         app:srcCompat="@drawable/_658934_200__1_"
-        tools:layout_editor_absoluteX="181dp"
-        tools:layout_editor_absoluteY="638dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView33"
         android:layout_width="50dp"
         android:layout_height="31dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="656dp"
         app:srcCompat="@drawable/profile"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="656dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button12"
         android:layout_width="97dp"
         android:layout_height="37dp"
         android:text="Profile"
-        tools:layout_editor_absoluteX="-4dp"
-        tools:layout_editor_absoluteY="690dp" />
+        android:translationX="-4dp"
+        android:layout_marginTop="690dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button13"
         android:layout_width="112dp"
         android:layout_height="39dp"
         android:text="Subjects"
-        tools:layout_editor_absoluteX="69dp"
-        tools:layout_editor_absoluteY="689dp" />
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="689dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView34"
         android:layout_width="47dp"
         android:layout_height="36dp"
+        android:layout_marginStart="113dp"
+        android:layout_marginTop="650dp"
         app:srcCompat="@drawable/subject"
-        tools:layout_editor_absoluteX="113dp"
-        tools:layout_editor_absoluteY="650dp" />
-
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextText"
@@ -186,25 +252,9 @@
         android:inputType="text"
         android:text="𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐛𝐚𝐜𝐤,"
         android:textSize="30sp"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="16dp" />
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView24"
-        android:layout_width="214dp"
-        android:layout_height="182dp"
-        app:srcCompat="@drawable/images__1_"
-        tools:layout_editor_absoluteX="-4dp"
-        tools:layout_editor_absoluteY="128dp" />
-
-    <ImageView
-        android:id="@+id/imageView18"
-        android:layout_width="194dp"
-        android:layout_height="176dp"
-        app:srcCompat="@drawable/pngtree_purple_clock_timetable_illustration_image_1405819"
-        tools:layout_editor_absoluteX="212dp"
-        tools:layout_editor_absoluteY="134dp" />
-
-
-</an
-    droidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
