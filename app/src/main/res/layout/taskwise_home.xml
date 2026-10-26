@@ -30,22 +30,24 @@
         android:id="@+id/button9"
         android:layout_width="79dp"
         android:layout_height="39dp"
+        android:layout_marginBottom="4dp"
         android:text="Home"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintHorizontal_bias="0.557"
+        app:layout_constraintStart_toStartOf="parent" />
 
-
-    <ImageView
-        android:id="@+id/imageView17"
-        android:layout_width="214dp"
-        android:layout_height="182dp"
-        android:layout_marginTop="128dp"
-        android:translationX="-4dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/images__1_" />
+    <ImageButton
+        android:id="@+id/CheckList"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_weight="1"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="checklist"
+        android:scaleType="fitCenter"
+        android:src="@drawable/images__1_"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="151dp" />
 
     <Button
         android:id="@+id/buttonCheckList"
@@ -59,28 +61,30 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Check List"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="288dp"
         android:backgroundTint="#03A9F4"
+        android:text="Check List"
         android:textColor="#FFFFFF"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="291dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
-    <ImageView
-        android:id="@+id/imageView18"
-        android:layout_width="194dp"
-        android:layout_height="176dp"
-        android:layout_marginStart="216dp"
-        android:layout_marginTop="132dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/pngtree_purple_clock_timetable_illustration_image_1405819" />
+    <ImageButton
+        android:id="@+id/clock"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_weight="1"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="clock"
+        android:scaleType="fitCenter"
+        android:src="@drawable/pngtree_purple_clock_timetable_illustration_image_1405819"
+        tools:layout_editor_absoluteX="241dp"
+        tools:layout_editor_absoluteY="148dp" />
 
     <Button
         android:id="@+id/button"
@@ -107,15 +111,18 @@
         android:layout_marginTop="78dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-    <ImageView
-        android:id="@+id/imageViewDiary"
-        android:layout_width="212dp"
-        android:layout_height="193dp"
-        android:layout_marginTop="364dp"
-        android:translationX="-3dp"
-        app:srcCompat="@drawable/vecteezy_diary_book_sticker_18873852"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/notebookButton"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_weight="1"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="notebook"
+        android:scaleType="fitCenter"
+        android:src="@drawable/vecteezy_diary_book_sticker_18873852"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="387dp" />
 
     <Button
         android:id="@+id/button6"
@@ -129,18 +136,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView28"
-        android:layout_width="204dp"
-        android:layout_height="196dp"
-        android:background="@android:color/transparent"
-        android:contentDescription="Calendar icon"
+    <ImageButton
+        android:id="@+id/calendarButton"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_weight="1"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="calendar"
         android:scaleType="fitCenter"
-        android:layout_marginStart="208dp"
-        android:layout_marginTop="362dp"
-        app:srcCompat="@drawable/pngtreecalendar_icon_with_a_highlighted_22163752"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:src="@drawable/pngtreecalendar_icon_with_a_highlighted_22163752"
+        tools:layout_editor_absoluteX="231dp"
+        tools:layout_editor_absoluteY="387dp" />
 
     <Button
         android:id="@+id/button8"
@@ -198,11 +204,11 @@
         android:id="@+id/imageView4"
         android:layout_width="60dp"
         android:layout_height="68dp"
-        android:layout_marginStart="181dp"
-        android:layout_marginTop="638dp"
-        app:srcCompat="@drawable/_658934_200__1_"
+        android:layout_marginStart="184dp"
+        android:layout_marginTop="636dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/_658934_200__1_" />
 
     <ImageView
         android:id="@+id/imageView33"

@@ -18,16 +18,16 @@
         android:layout_width="436dp"
         android:layout_height="383dp"
         app:srcCompat="@drawable/web_button_color_icon_png"
-        tools:layout_editor_absoluteX="-13dp"
-        tools:layout_editor_absoluteY="503dp" />
+        tools:layout_editor_absoluteX="-9dp"
+        tools:layout_editor_absoluteY="494dp" />
 
     <Button
         android:id="@+id/button14"
         android:layout_width="79dp"
         android:layout_height="39dp"
         android:text="Home"
-        tools:layout_editor_absoluteX="166dp"
-        tools:layout_editor_absoluteY="689dp" />
+        app:layout_constraintEnd_toStartOf="@+id/button16"
+        tools:layout_editor_absoluteY="690dp" />
 
     <ImageView
         android:id="@+id/imageView27"
@@ -107,7 +107,7 @@
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/images__2_"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-39dp" />
+        tools:layout_editor_absoluteY="-38dp" />
 
     <EditText
         android:id="@+id/editTextText"
@@ -182,13 +182,17 @@
         tools:layout_editor_absoluteX="194dp"
         tools:layout_editor_absoluteY="222dp" />
 
-    <ImageView
-        android:id="@+id/imageView8"
+    <ImageButton
+        android:id="@+id/homeButton"
         android:layout_width="435dp"
-        android:layout_height="146dp"
-        app:srcCompat="@drawable/screenshot_2026_10_17_200530"
-        tools:layout_editor_absoluteX="79dp"
-        tools:layout_editor_absoluteY="268dp" />
+        android:layout_height="140dp"
+        android:layout_weight="1"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Home"
+        android:scaleType="fitCenter"
+        android:src="@drawable/screenshot_2026_10_17_200530"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="270dp" />
 
     <ImageView
         android:id="@+id/imageView38"
@@ -259,13 +263,17 @@
         tools:layout_editor_absoluteX="329dp"
         tools:layout_editor_absoluteY="334dp" />
 
-    <ImageView
-        android:id="@+id/imageView15"
+    <ImageButton
+        android:id="@+id/calendarButton"
         android:layout_width="191dp"
         android:layout_height="142dp"
-        app:srcCompat="@drawable/screenshot_2026_10_17_202154"
-        tools:layout_editor_absoluteX="5dp"
-        tools:layout_editor_absoluteY="269dp" />
+        android:layout_weight="1"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="calendar"
+        android:scaleType="fitCenter"
+        android:src="@drawable/screenshot_2026_10_17_202154"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="268dp" />
 
     <ImageView
         android:id="@+id/imageView16"
