@@ -72,7 +72,7 @@
         android:layout_height="51dp"
         android:text="log in"
         android:backgroundTint="#191970db"
-    tools:ignore="HardcodedText,MissingConstraints"
+        tools:ignore="HardcodedText,MissingConstraints"
         tools:layout_editor_absoluteX="112dp"
         tools:layout_editor_absoluteY="588dp" />
 
@@ -104,7 +104,4 @@
         tools:ignore="ContentDescription,MissingConstraints,MissingPrefix"
         tools:layout_editor_absoluteX="59dp"
         tools:layout_editor_absoluteY="404dp"
-
-
-
 
