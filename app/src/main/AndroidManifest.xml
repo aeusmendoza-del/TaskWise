@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -11,10 +15,56 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TaskWise">
+
         <activity
-            android:name=".Reminder"
+            android:name="taskwise.login_taskwise"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="taskwise.taskwise_home"
+            android:exported="false" />
+        <activity
+            android:name="taskwise.taskwise_calendar"
+            android:exported="false" />
+        <activity
+            android:name="taskwise.taskwise_deadline"
+            android:exported="false" />
+        <activity
+            android:name="taskwise.taskwise_focus"
+            android:exported="false" />
+        <activity
+            android:name="taskwise.taskwise_notebook"
+            android:exported="false" />
+        <activity
+            android:name="taskwise.taskwise_profile"
+            android:exported="false" />
+        <activity
+            android:name="taskwise.taskwise_reminder"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="taskwise.taskwise_resources"
+            android:exported="false" />
+        <activity
+            android:name="taskwise.taskwise_subjects"
+            android:exported="false" />
+
+        <receiver
+            android:name="taskwise.ReminderAlarmReceiver"
+            android:exported="false" />
+        <receiver
+            android:name="taskwise.ReminderBootReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>
