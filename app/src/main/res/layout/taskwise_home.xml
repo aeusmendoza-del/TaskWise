@@ -1,266 +1,326 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/homeRoot"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFAFCFF"
+    android:fitsSystemWindows="true">
 
-
-    <ImageView
-        android:id="@+id/imageView21"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:contentDescription="Pogi image"
-        app:srcCompat="@drawable/pogi"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView26"
-        android:layout_width="0dp"
-        android:layout_height="383dp"
-        app:srcCompat="@drawable/web_button_color_icon_png"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="503dp" />
-
-
-    <Button
-        android:id="@+id/button9"
-        android:layout_width="79dp"
-        android:layout_height="39dp"
-        android:layout_marginBottom="4dp"
-        android:text="Home"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.557"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageButton
-        android:id="@+id/CheckList"
-        android:layout_width="140dp"
-        android:layout_height="140dp"
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="?attr/selectableItemBackgroundBorderless"
-        android:contentDescription="checklist"
-        android:scaleType="fitCenter"
-        android:src="@drawable/images__1_"
-        tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="151dp" />
+        android:fillViewport="false"
+        android:clipToPadding="false">
 
-    <Button
-        android:id="@+id/buttonCheckList"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Check List"
-        android:backgroundTint="#03A9F4"
-        android:textColor="#FFFFFF"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="291dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="18dp"
+            android:paddingBottom="18dp">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Welcome back,"
+                        android:textColor="#607080"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/homeUserName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-2dp"
+                        android:text="Student!"
+                        android:textColor="#2BC8C2"
+                        android:textSize="31sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="What would you like to do today?"
+                        android:textColor="#607080"
+                        android:textSize="13sp" />
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="112dp"
+                    android:layout_height="118dp"
+                    android:src="@drawable/ic_task_checklist"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="Task checklist illustration" />
+            </LinearLayout>
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="288dp"
-        android:backgroundTint="#03A9F4"
-        android:text="Check List"
-        android:textColor="#FFFFFF"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            <LinearLayout
+                android:id="@+id/homeTodayCard"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/bg_summary"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="14dp"
+                android:paddingEnd="12dp">
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_task_calendar"
+                    android:contentDescription="Today" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/homeTodaySummary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Your day, at a glance"
+                        android:textColor="#233B4D"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/homeTodayDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="Tap to view your tasks"
+                        android:textColor="#64788A"
+                        android:textSize="11sp" />
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:src="@drawable/ic_arrow_right"
+                    android:contentDescription="Open tasks" />
+            </LinearLayout>
 
-    <ImageButton
-        android:id="@+id/clock"
-        android:layout_width="140dp"
-        android:layout_height="140dp"
-        android:layout_weight="1"
-        android:background="?attr/selectableItemBackgroundBorderless"
-        android:contentDescription="clock"
-        android:scaleType="fitCenter"
-        android:src="@drawable/pngtree_purple_clock_timetable_illustration_image_1405819"
-        tools:layout_editor_absoluteX="241dp"
-        tools:layout_editor_absoluteY="148dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:orientation="horizontal"
+                android:baselineAligned="false">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="256dp"
-        android:layout_marginTop="296dp"
-        android:backgroundTint="#CF9FFF"
-        android:text="Deadline"
-        android:textColor="#FFFFFF"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+                <LinearLayout
+                    android:id="@+id/checklistCard"
+                    android:layout_width="0dp"
+                    android:layout_height="244dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/bg_home_teal"
+                    android:elevation="5dp"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp">
+                    <ImageButton
+                        android:id="@+id/btnChecklistImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="125dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:src="@drawable/ic_task_checklist"
+                        android:scaleType="fitCenter"
+                    android:tint="@null"
+                        android:contentDescription="Open Checklist" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Checklist"
+                        android:textColor="#253548"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="View and manage\nyour tasks"
+                        android:textAlignment="center"
+                        android:textColor="#667686"
+                        android:textSize="12sp" />
+                    <ImageButton
+                        android:id="@+id/btnChecklistArrow"
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:background="@drawable/bg_arrow_teal"
+                        android:padding="5dp"
+                        android:src="@drawable/ic_arrow_right"
+                        android:scaleType="fitCenter"
+                    android:tint="@null"
+                        android:contentDescription="Open Checklist" />
+                </LinearLayout>
 
-    <EditText
-        android:id="@+id/editTextUser"
-        android:layout_width="71dp"
-        android:layout_height="56dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="User"
-        android:textColor="#2196F3"
-        android:textSize="30sp"
-        android:layout_marginStart="185dp"
-        android:layout_marginTop="78dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+                <LinearLayout
+                    android:id="@+id/deadlineCard"
+                    android:layout_width="0dp"
+                    android:layout_height="244dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/bg_home_purple"
+                    android:elevation="5dp"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp">
+                    <ImageButton
+                        android:id="@+id/btnDeadlineImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="125dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:src="@drawable/ic_task_deadline"
+                        android:scaleType="fitCenter"
+                    android:tint="@null"
+                        android:contentDescription="Open Deadline" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Deadline"
+                        android:textColor="#253548"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Set and track\nyour deadlines"
+                        android:textAlignment="center"
+                        android:textColor="#667686"
+                        android:textSize="12sp" />
+                    <ImageButton
+                        android:id="@+id/btnDeadlineArrow"
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:background="@drawable/bg_arrow_purple"
+                        android:padding="5dp"
+                        android:src="@drawable/ic_arrow_right"
+                        android:scaleType="fitCenter"
+                    android:tint="@null"
+                        android:contentDescription="Open Deadline" />
+                </LinearLayout>
+            </LinearLayout>
 
-    <ImageButton
-        android:id="@+id/notebookButton"
-        android:layout_width="140dp"
-        android:layout_height="140dp"
-        android:layout_weight="1"
-        android:background="?attr/selectableItemBackgroundBorderless"
-        android:contentDescription="notebook"
-        android:scaleType="fitCenter"
-        android:src="@drawable/vecteezy_diary_book_sticker_18873852"
-        tools:layout_editor_absoluteX="24dp"
-        tools:layout_editor_absoluteY="387dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:orientation="horizontal"
+                android:baselineAligned="false">
 
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Notebook"
-        android:backgroundTint="#FF69B4"
-        android:textColor="#FFFFFF"
-        android:layout_marginStart="33dp"
-        android:layout_marginTop="527dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+                <LinearLayout
+                    android:id="@+id/notebookCard"
+                    android:layout_width="0dp"
+                    android:layout_height="244dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/bg_home_pink"
+                    android:elevation="5dp"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp">
+                    <ImageButton
+                        android:id="@+id/btnNotebookImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="125dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:src="@drawable/ic_task_notebook"
+                        android:scaleType="fitCenter"
+                    android:tint="@null"
+                        android:contentDescription="Open Notebook" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Notebook"
+                        android:textColor="#253548"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Save notes and\nimportant ideas"
+                        android:textAlignment="center"
+                        android:textColor="#667686"
+                        android:textSize="12sp" />
+                    <ImageButton
+                        android:id="@+id/btnNotebookArrow"
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:background="@drawable/bg_arrow_pink"
+                        android:padding="5dp"
+                        android:src="@drawable/ic_arrow_right"
+                        android:scaleType="fitCenter"
+                    android:tint="@null"
+                        android:contentDescription="Open Notebook" />
+                </LinearLayout>
 
-    <ImageButton
-        android:id="@+id/calendarButton"
-        android:layout_width="140dp"
-        android:layout_height="140dp"
-        android:layout_weight="1"
-        android:background="?attr/selectableItemBackgroundBorderless"
-        android:contentDescription="calendar"
-        android:scaleType="fitCenter"
-        android:src="@drawable/pngtreecalendar_icon_with_a_highlighted_22163752"
-        tools:layout_editor_absoluteX="231dp"
-        tools:layout_editor_absoluteY="387dp" />
+                <LinearLayout
+                    android:id="@+id/calendarCard"
+                    android:layout_width="0dp"
+                    android:layout_height="244dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/bg_home_blue"
+                    android:elevation="5dp"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp">
+                    <ImageButton
+                        android:id="@+id/btnCalendarImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="125dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:src="@drawable/ic_task_calendar"
+                        android:scaleType="fitCenter"
+                    android:tint="@null"
+                        android:contentDescription="Open Calendar" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Calendar"
+                        android:textColor="#253548"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="View your schedule\nand events"
+                        android:textAlignment="center"
+                        android:textColor="#667686"
+                        android:textSize="12sp" />
+                    <ImageButton
+                        android:id="@+id/btnCalendarArrow"
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:background="@drawable/bg_arrow_blue"
+                        android:padding="5dp"
+                        android:src="@drawable/ic_arrow_right"
+                        android:scaleType="fitCenter"
+                    android:tint="@null"
+                        android:contentDescription="Open Calendar" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 
-    <Button
-        android:id="@+id/button8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Calendar"
-        android:backgroundTint="#000000"
-        android:textColor="#FFFFFF"
-        android:layout_marginStart="244dp"
-        android:layout_marginTop="534dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView30"
-        android:layout_width="38dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="356dp"
-        android:layout_marginTop="651dp"
-        app:srcCompat="@drawable/memus"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button10"
-        android:layout_width="80dp"
-        android:layout_height="38dp"
-        android:text="Menu"
-        android:layout_marginStart="330dp"
-        android:layout_marginTop="690dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView32"
-        android:layout_width="43dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="276dp"
-        android:layout_marginTop="650dp"
-        app:srcCompat="@drawable/task"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button11"
-        android:layout_width="78dp"
-        android:layout_height="38dp"
-        android:text="Task"
-        android:layout_marginStart="260dp"
-        android:layout_marginTop="690dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="60dp"
-        android:layout_height="68dp"
-        android:layout_marginStart="184dp"
-        android:layout_marginTop="636dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/_658934_200__1_" />
-
-    <ImageView
-        android:id="@+id/imageView33"
-        android:layout_width="50dp"
-        android:layout_height="31dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="656dp"
-        app:srcCompat="@drawable/profile"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button12"
-        android:layout_width="97dp"
-        android:layout_height="37dp"
-        android:text="Profile"
-        android:translationX="-4dp"
-        android:layout_marginTop="690dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button13"
-        android:layout_width="112dp"
-        android:layout_height="39dp"
-        android:text="Subjects"
-        android:layout_marginStart="69dp"
-        android:layout_marginTop="689dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView34"
-        android:layout_width="47dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="113dp"
-        android:layout_marginTop="650dp"
-        app:srcCompat="@drawable/subject"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/editTextText"
-        android:layout_width="229dp"
-        android:layout_height="56dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐛𝐚𝐜𝐤,"
-        android:textSize="30sp"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <include layout="@layout/bottom_navigation" />
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="#FFFAFCFF" android:fitsSystemWindows="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="58dp" android:gravity="center_vertical" android:paddingStart="14dp" android:paddingEnd="14dp" android:orientation="horizontal">
+        <ImageButton android:id="@+id/notebookBackButton" android:layout_width="42dp" android:layout_height="42dp" android:background="?attr/selectableItemBackgroundBorderless" android:src="@drawable/ic_back" android:contentDescription="Back" android:tint="@null" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8dp" android:text="Notebook" android:textColor="#24364A" android:textSize="24sp" android:textStyle="bold" />
+    </LinearLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:fillViewport="true">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="18dp">
+            <ImageView android:layout_width="match_parent" android:layout_height="132dp" android:src="@drawable/notebook" android:scaleType="fitCenter" android:contentDescription="Notebook illustration" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="Your Notes" android:textColor="#26364A" android:textSize="20sp" android:textStyle="bold" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tap a note to edit or delete it." android:textColor="#667686" android:textSize="12sp" />
+            <LinearLayout android:id="@+id/notesContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" />
+            <LinearLayout android:id="@+id/addNoteCard" android:layout_width="match_parent" android:layout_height="62dp" android:layout_marginTop="14dp" android:background="@drawable/bg_add_reminder" android:gravity="center" android:orientation="horizontal">
+                <ImageButton android:id="@+id/addNoteImageButton" android:layout_width="38dp" android:layout_height="38dp" android:background="#42C9C2" android:padding="8dp" android:src="@drawable/ic_add" android:tint="@null" android:contentDescription="Add note" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="10dp" android:text="Add New Note" android:textColor="#269E9A" android:textStyle="bold" android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/bottom_navigation" />
+</LinearLayout>
