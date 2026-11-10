@@ -1,108 +1,191 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loginScroll"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:ignore="ExtraText">
+    android:background="#FFFFFFFF"
+    android:fillViewport="true"
+    android:clipToPadding="false">
 
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src= "drawable/download"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="0dp"
-        tools:ignore="ContentDescription,MissingConstraints" />
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingStart="28dp"
+        android:paddingEnd="28dp"
+        android:paddingTop="10dp">
 
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="357dp"
-        android:layout_height="257dp"
-        android:src="@drawable/blue_and_white_illustrated_login_page_mobile_prototype__1_"
-        tools:layout_editor_absoluteX="-142dp"
-        tools:layout_editor_absoluteY="639dp"
-        tools:ignore="ContentDescription,MissingConstraints" />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="285dp">
+            <ImageView
+                android:id="@+id/loginLogo"
+                android:layout_width="205dp"
+                android:layout_height="195dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="26dp"
+                android:src="@drawable/ic_taskwise_mark"
+                android:scaleType="fitCenter"
+                android:contentDescription="TaskWise checkmark technology logo" />
+        </FrameLayout>
 
-    <ImageView
-        android:id="@+id/imageView11"
-        android:layout_width="499dp"
-        android:layout_height="275dp"
-        android:src="@drawable/blue_and_white_illustrated_login_page_mobile_prototype__1_"
-        tools:ignore="ContentDescription,MissingConstraints"
-        tools:layout_editor_absoluteX="76dp"
-        tools:layout_editor_absoluteY="-194dp" />
+        <TextView
+            android:id="@+id/loginWordmark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-4dp"
+            android:text="TASKWISE"
+            android:textColor="#258E91"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.08" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="201dp"
-        android:layout_height="47dp"
-        android:backgroundTint="#4169E1db"
-        android:text="USERNAME"
-        tools:ignore="HardcodedText,MissingConstraints"
-        tools:layout_editor_absoluteX="109dp"
-        tools:layout_editor_absoluteY="404dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="202dp"
-        android:layout_height="46dp"
-        android:backgroundTint="#4169E1db"
-        android:text="EMAIL"
-        tools:ignore="HardcodedText,MissingConstraints"
-        tools:layout_editor_absoluteX="109dp"
-        tools:layout_editor_absoluteY="464dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:background="@drawable/bg_icon_circle"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_user"
+                    android:contentDescription="Username icon" />
+                <EditText
+                    android:id="@+id/usernameInput"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="12dp"
+                    android:background="@drawable/bg_input"
+                    android:paddingStart="18dp"
+                    android:paddingEnd="18dp"
+                    android:hint="Username"
+                    android:textColor="#26364A"
+                    android:textColorHint="#8997A6"
+                    android:textSize="14sp"
+                    android:singleLine="true"
+                    android:inputType="textPersonName"
+                    android:autofillHints="username" />
+            </LinearLayout>
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="202dp"
-        android:layout_height="44dp"
-        android:backgroundTint="#4169E1db"
-        android:text="PASSWORD"
-        tools:ignore="HardcodedText,MissingConstraints"
-        tools:layout_editor_absoluteX="109dp"
-        tools:layout_editor_absoluteY="527dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:background="@drawable/bg_icon_circle"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_email"
+                    android:contentDescription="Email icon" />
+                <EditText
+                    android:id="@+id/emailInput"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="12dp"
+                    android:background="@drawable/bg_input"
+                    android:paddingStart="18dp"
+                    android:paddingEnd="18dp"
+                    android:hint="Email"
+                    android:textColor="#26364A"
+                    android:textColorHint="#8997A6"
+                    android:textSize="14sp"
+                    android:singleLine="true"
+                    android:inputType="textEmailAddress"
+                    android:autofillHints="emailAddress" />
+            </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:background="@drawable/bg_icon_circle"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_lock"
+                    android:contentDescription="Password icon" />
+                <EditText
+                    android:id="@+id/passwordInput"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="12dp"
+                    android:background="@drawable/bg_input"
+                    android:paddingStart="18dp"
+                    android:paddingEnd="18dp"
+                    android:hint="Password"
+                    android:textColor="#26364A"
+                    android:textColorHint="#8997A6"
+                    android:textSize="14sp"
+                    android:singleLine="true"
+                    android:inputType="textPassword"
+                    android:autofillHints="password" />
+            </LinearLayout>
 
-    <Button
-        android:id="@+id/button7"
-        android:layout_width="186dp"
-        android:layout_height="51dp"
-        android:text="log in"
-        android:backgroundTint="#191970db"
-        tools:ignore="HardcodedText,MissingConstraints"
-        tools:layout_editor_absoluteX="112dp"
-        tools:layout_editor_absoluteY="588dp" />
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="155dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_primary_button"
+                android:backgroundTint="@null"
+                android:elevation="2dp"
+                android:text="Log in"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFFFF"
+                android:textSize="15sp" />
 
+            <TextView
+                android:id="@+id/forgotPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:text="Forgot Password"
+                android:textColor="#46576A"
+                android:textSize="12sp"
+                android:padding="4dp" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="227dp"
-        android:layout_height="225dp"
-        android:layout_marginBottom="440dp"
-        android:src="@drawable/blue_and_white_illustrated_login_page_mobile_prototype__5_"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:ignore="ContentDescription,MissingConstraints"
-        tools:layout_editor_absoluteX="89dp" />
+            <TextView
+                android:id="@+id/createAccountText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:padding="6dp"
+                android:text="Don't Have an Account?"
+                android:textColor="#4F5D6B"
+                android:textSize="12sp" />
+        </LinearLayout>
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="212dp"
-        android:layout_height="63dp"
-        android:src="@drawable/img"
-        tools:layout_editor_absoluteX="99dp"
-        tools:layout_editor_absoluteY="299dp"
-        tools:ignore="ContentDescription,MissingConstraints" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="40dp"
-        android:layout_height="166dp"
-        android:src="@drawable/blue_and_white_illustrated_login_page_mobile_prototype__6_"
-        tools:ignore="ContentDescription,MissingConstraints,MissingPrefix"
-        tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="404dp"
-
-
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Plan smarter. Study with focus."
+                android:textColor="#718294"
+                android:textSize="12sp" />
+        </FrameLayout>
+    </LinearLayout>
+</ScrollView>
